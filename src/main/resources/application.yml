@@ -1,0 +1,22 @@
+#Tomcat configuration
+server:
+  port: 8080
+
+#Global configuration
+spring:
+  application:
+    name: api-test
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: none
